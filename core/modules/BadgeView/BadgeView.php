@@ -44,7 +44,7 @@ class BadgeView extends CodonModule {
 		return $all_img_names;
 	}
 	
-	public function save_badge() {
+	protected function save_badge() {
 		$pilot = Auth::$pilot;
 		$bgimg = DB::escape($this->post->bgimage);
 		$params = array(
